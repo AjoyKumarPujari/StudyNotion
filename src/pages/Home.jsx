@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Highlighttext from '../components/core/HomePage/Highlighttext'
 import CTAButton from '../components/core/HomePage/Button'
 import Banner from '../assets/Images/banner.mp4'
+import CodeBlocks from '../components/core/HomePage/CodeBlocks'
 const Home = () => {
   return (
     <div>
@@ -47,7 +48,72 @@ const Home = () => {
               </video>
             </div>
             
+            {/*code section 1 */}
+            <div>
+              <CodeBlocks 
+              position={"lg:flex-row"}
+              heading={
+                <div className='text-4xl font-semibold'>
+                  Unlock Your{" "} <Highlighttext text={"Coding potential"}/>
+                  {" "}with our online courses
+                </div>
+              }
+              subheading={
+                "Our courses are one of best courses of the planate with multiple mentors with years of experience in teaching and solving real world problems"
+              }
+              ctabtn1={
+                {
+                  btnText: "Try it yourself",
+                  linkto: "/signup",
+                  active: true
+                }
+              }
+              ctabtn2={
+                {
+                  btnText: "learn more",
+                  linkto: "/login",
+                  active: false
+                }
+              }
 
+              codeblock={ `<!DOCTYPE>\n <html>\n<title>\nHEllo World\n</title>\n<head>Html code</head>\n<body>\nYour First Heading\nYour First Paragraph\nYour First Code \n</body>\n</html>`}
+              codeColor={"text-yellow-25"}
+              />
+            </div>
+
+
+{/*code section 2 */}
+<div>
+              <CodeBlocks 
+              position={"lg:flex-row-reverse"}
+              heading={
+                <div className='text-4xl font-semibold'>
+                  Start{" "} <Highlighttext text={"Coding in Seconds"}/>
+                
+                </div>
+              }
+              subheading={
+                "Our courses are one of best courses of the planate with multiple mentors with years of experience in teaching and solving real world problems"
+              }
+              ctabtn1={
+                {
+                  btnText: "Continue Lession",
+                  linkto: "/signup",
+                  active: true
+                }
+              }
+              ctabtn2={
+                {
+                  btnText: "learn more",
+                  linkto: "/login",
+                  active: false
+                }
+              }
+
+              codeblock={ `<!DOCTYPE>\n <html>\n<title>\nHEllo World\n</title>\n<head>Html code</head>\n<body>\nYour First Heading\nYour First Paragraph\nYour First Code \n</body>\n</html>`}
+              codeColor={"text-yellow-25"}
+              />
+            </div>
         </div>
 
 
