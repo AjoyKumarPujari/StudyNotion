@@ -5,6 +5,8 @@ import Highlighttext from '../components/core/HomePage/Highlighttext'
 import CTAButton from '../components/core/HomePage/Button'
 import Banner from '../assets/Images/banner.mp4'
 import CodeBlocks from '../components/core/HomePage/CodeBlocks'
+import TimelineSection from '../components/core/HomePage/TimelineSection'
+import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection'
 const Home = () => {
   return (
     <div>
@@ -119,9 +121,9 @@ const Home = () => {
 
         {/*section2 */}
         <div className='bg-pure-greys-5 text-richblack-700'>
-              <div className='homepage_bg h-[300px]'>
+              <div className='homepage_bg h-[200px]'>
                 <div className=' w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-5 mx-auto '>
-                    <div className='h-[100px]'>
+                    <div className='h-[50px]'>
 
                     </div>
                     
@@ -142,8 +144,38 @@ const Home = () => {
                     </div>
                 </div>
               </div>
-        </div>
+              <div className='mx-auto w-11/12 max-w-maxContent flex flex-col gap-7 items-center justify-between'>
+                    <div className='flex flex-row gap-5 mb-10'>                     
+                       <div  className='text-4xl font-semibold w-[45%]'>
+                            Get the skills you need for a{" "} 
+                            <Highlighttext text={"job that is in demand"}/>
+                       </div>
+                       <div className='flex flex-col gap-10 w-[40%] items-start '>
+                         <div className='text-[16px]'> 
+                              "The modern StudyNotion is the dictates its own term. Today, to be a competative speciliest requires more then professional Skills "                  
+                          </div>
+                          <CTAButton active={true} linkto={"/signup"}>
+                            <div >
+                              Learn More
+                            </div>  
+                          </CTAButton>
 
+                        <div>
+                    </div>
+                    
+                    
+                  </div>
+                </div>
+              </div>
+        
+               <TimelineSection /> 
+
+
+              <LearningLanguageSection />
+
+              
+        </div>
+        
 
         {/*section3 */}  
 
