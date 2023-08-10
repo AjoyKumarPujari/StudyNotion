@@ -111,14 +111,38 @@ const Home = () => {
               }
 
               codeblock={ `<!DOCTYPE>\n <html>\n<title>\nHEllo World\n</title>\n<head>Html code</head>\n<body>\nYour First Heading\nYour First Paragraph\nYour First Code \n</body>\n</html>`}
-              codeColor={"text-yellow-25"}
+              codeColor={"text-blue-25"}
               />
             </div>
         </div>
 
 
         {/*section2 */}
+        <div className='bg-pure-greys-5 text-richblack-700'>
+              <div className='homepage_bg h-[300px]'>
+                <div className=' w-11/12 max-w-maxContent flex flex-col items-center justify-between gap-5 mx-auto '>
+                    <div className='h-[100px]'>
 
+                    </div>
+                    
+                    <div className='flex flex-row gap-7 text-white'>
+                      <CTAButton active={true} linkto={"/signup"}>
+                          <div className='flex items-center gap-3'>
+                            Explore full Catalog
+                            <FaArrowRight/>
+                          </div>
+                          
+                      </CTAButton>
+                      <CTAButton active={false} linkto={"/signup"}>
+                          <div >
+                            Learn More
+                          </div>
+                          
+                      </CTAButton>
+                    </div>
+                </div>
+              </div>
+        </div>
 
 
         {/*section3 */}  
