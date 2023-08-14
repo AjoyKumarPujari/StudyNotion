@@ -168,7 +168,7 @@ const Home = () => {
                 </div>
 
                 <TimelineSection /> 
-
+                <LearningLanguageSection/>
 
               </div>
         
