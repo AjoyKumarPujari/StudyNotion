@@ -67,7 +67,7 @@ const Footer = () => {
                       key={index}
                       className="text-[14px] cursor-pointer hover:text-richblack-50 transition-all duration-200"
                     >
-                      <Link to={ele.split(" ").join("-").toLowerCase()}>
+                      <Link to={ele.toLowerCase()}>
                         {ele}
                       </Link>
                     </div>
@@ -87,7 +87,6 @@ const Footer = () => {
               <h1 className="text-richblack-50 font-semibold text-[16px]">
                 Plans
               </h1>
-
               <div className="flex flex-col gap-2 mt-2">
                 {Plans.map((ele, index) => {
                   return (

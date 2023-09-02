@@ -9,6 +9,7 @@ import TimelineSection from '../components/core/HomePage/TimelineSection'
 import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection'
 import InstructorSection from '../components/core/HomePage/InstructorSection'
 import Footer from '../components/common/Footer'
+import  ExploreMore  from '../components/core/HomePage/ExploreMore'
 
 const Home = () => {
   return (
@@ -87,38 +88,40 @@ const Home = () => {
             </div>
 
 
-{/*code section 2 */}
-<div>
-              <CodeBlocks 
-              position={"lg:flex-row-reverse"}
-              heading={
-                <div className='text-4xl font-semibold'>
-                  Start{" "} <Highlighttext text={"Coding in Seconds"}/>
-                
-                </div>
-              }
-              subheading={
-                "Our courses are one of best courses of the planate with multiple mentors with years of experience in teaching and solving real world problems"
-              }
-              ctabtn1={
-                {
-                  btnText: "Continue Lession",
-                  linkto: "/signup",
-                  active: true
-                }
-              }
-              ctabtn2={
-                {
-                  btnText: "learn more",
-                  linkto: "/login",
-                  active: false
-                }
-              }
+          {/*code section 2 */}
+          <div>
+                        <CodeBlocks 
+                        position={"lg:flex-row-reverse"}
+                        heading={
+                          <div className='text-4xl font-semibold'>
+                            Start{" "} <Highlighttext text={"Coding in Seconds"}/>
+                          
+                          </div>
+                        }
+                        subheading={
+                          "Our courses are one of best courses of the planate with multiple mentors with years of experience in teaching and solving real world problems"
+                        }
+                        ctabtn1={
+                          {
+                            btnText: "Continue Lession",
+                            linkto: "/signup",
+                            active: true
+                          }
+                        }
+                        ctabtn2={
+                          {
+                            btnText: "learn more",
+                            linkto: "/login",
+                            active: false
+                          }
+                        }
 
-              codeblock={ `<!DOCTYPE>\n <html>\n<title>\nHEllo World\n</title>\n<head>Html code</head>\n<body>\nYour First Heading\nYour First Paragraph\nYour First Code \n</body>\n</html>`}
-              codeColor={"text-blue-25"}
-              />
-            </div>
+                        codeblock={ `<!DOCTYPE>\n <html>\n<title>\nHEllo World\n</title>\n<head>Html code</head>\n<body>\nYour First Heading\nYour First Paragraph\nYour First Code \n</body>\n</html>`}
+                        codeColor={"text-blue-25"}
+                        />
+          </div>
+
+          <ExploreMore/>
         </div>
 
 
